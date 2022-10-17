@@ -1,0 +1,66 @@
+
+
+
+
+ .wrapper{
+  background-color: white;
+  display: flex;
+  height: 100vh;
+}
+  
+.form {
+  padding: 60px;
+  box-sizing: border-box;
+  margin: 0;
+  width:40%
+  
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 10;
+  border:0;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+
+.right-img {
+	background-image:  url("databaselogo.jpg");
+	width: 30%;
+	
+	height:70%;
+	
+ margin-left:250px;
+  margin-top:120px;
+    position: right;
+    
+    background-repeat: no-repeat;
+ 
+
+}
+
+.logindetail{
+margin :0;
+padding:0;
+border:2px;
+  background-color:wheat;
+  text-align:right;
+  font-family:Arial, Helvetica, sans-serif;
+  color:blue;
+  
+}
+
+.logindetail li{
+  display:inline;
+  list-style: none;
+}
+
