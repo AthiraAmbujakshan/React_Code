@@ -1,0 +1,46 @@
+.heading {
+    text-align: center;
+    padding: 10px;
+    color: black;
+
+}
+
+
+
+.first {
+margin-top:120px;
+    margin-left: 450px;
+   box-align: center;
+   width:20%;
+   
+  }
+
+  input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn {
+    background-color: #04AA6D;
+    margin: 5px 0 22px 0;
+    color: white;
+    padding: 10px;
+    border: none;
+
+    width: 60%;
+
+}
+
+.btn:hover {
+    opacity: 1;
+}
