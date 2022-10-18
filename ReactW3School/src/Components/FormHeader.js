@@ -1,14 +1,32 @@
-import React from 'react'
-import{Link} from 'react-router-dom'
-import './ButtonStyle.css'
+//displays the header only if username is displayed
 
-function Button(){
 
-	return(
-		<Link to="Signup">
-			<button className ="btn">Sign up</button>
+import React from 'react';
 
-		</Link>
-	)
+class FormHeader extends React.Component {
+constructor(){
+	super()
+	this.state ={username :''}
 }
-export default Button
+   changeHandler=(event)=>{
+	   this.setState(
+   
+   {username:event.target.value}
+	   )}
+
+	render(){
+     
+		return(
+
+    
+     <form>
+        <h1>HELLO {this.state.username}</h1>
+	   <input type ="text" value ={this.state.username} 
+	   onChange ={this.changeHandler}   />
+   </form>
+
+		)
+	}
+
+}
+export default FormHeader
