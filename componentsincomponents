@@ -1,0 +1,43 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+class Car extends React.Component{
+
+render(){
+	return (
+		<div>
+  <h1> i am a {this.props.color} car!</h1>
+  <ul>
+
+	  <li> apples</li>
+ <li> Mangoes</li>
+ <li>Oranges</li>
+ 
+ 
+  </ul>
+
+
+		</div>
+	);
+	
+	
+}
+}
+class Garage extends React.Component{
+
+	render(){
+
+		return (
+<div>
+			<h1> who lives in my garage?</h1>
+			<Car />
+			</div>
+		);
+	}
+}
+	
+	
+	
+
+ReactDOM.render(<Garage />, document.getElementById('root'));

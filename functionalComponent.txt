@@ -1,0 +1,95 @@
+------------------------------index.js---------------------------------
+
+
+
+import React from 'react';
+
+import ReactDOM from 'react-dom';
+
+
+// --- using function 
+
+
+/* import Greet from './Components/Greet';
+class App extends React.Component{
+	render(){
+		return (
+<div>
+
+<Greet/>
+
+
+</div>
+
+
+		)
+	}
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));	
+
+*/
+
+// --- using named export--- use the same name as Greet component
+
+/*  import {Greet} from './Components/Greet';
+class App extends React.Component{
+	render(){
+		return (
+<div>
+
+<Greet/>
+
+
+</div>
+
+
+		)
+	}
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));	
+
+*/
+
+
+// using a different name for greet component
+
+ import AnyComponent from './Components/Greet';
+class App extends React.Component{
+	render(){
+		return (
+<div>
+
+<AnyComponent/>
+
+
+</div>
+
+
+		);
+	}
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));	
+
+----------------------------Greet.js---------------------------
+
+import React from 'react';
+
+//-------using function component
+
+
+/*function Greet(){
+ return <h1> Hello Athira!</h1>
+     export default Greet;
+
+}*/
+//------using arrow funstions
+      const Greet =()=> <h1> Hello World!</h1>
+
+         export default Greet;
+
+//---- using named export 
+
+//export const Greet =()=><h1> Hello World!</h1>
